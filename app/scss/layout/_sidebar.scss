@@ -1,0 +1,24 @@
+.page-sidebar {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  padding-right: 20px;
+
+  @include media($small-screen) {
+    @include span-columns(2);
+    padding-left: 20px;
+  }
+
+  @include media($medium-screen) {
+    @include span-columns(4);
+    padding-left: 20px;
+  }
+
+  @include media($large-screen) {
+    @include span-columns(3);
+  }
+
+  @include media($xl-screen) {
+    @include span-columns(4);
+    padding-right: 0;
+  }
+}

@@ -1,0 +1,58 @@
+$header-height: 125px;
+$footer-height: 125px;
+
+$font-trebuchet: 'Trebuchet MS', 'Lucida Grande', sans-serif;
+
+$font-times-new-roman: "Times New Roman", Times, Baskerville, Georgia, serif;
+
+$font-family: $font-trebuchet;
+$font-family-heading: $font-times-new-roman;
+
+$font-size: 14px;
+$font-heading1-size: 35px;
+$font-heading2-size: 23px;
+
+$line-height: 1.5em;
+
+$white: #fff;
+$silver: #c0c0c0;
+$gray: #808080;
+$color-gray: #808080;
+$black: #000;
+$red: #f00;
+$maroon: #800000;
+$yellow: #ff0;
+$olive: #808000;
+$lime: #0f0;
+$green: #008000;
+$aqua: #0ff;
+$teal: #008080;
+$blue: #0ff;
+$navy: #000080;
+$fuchsia: #f0f;
+$purple: #800080;
+
+$razzmatazz: #d3135a;
+$cotton-candy: #ffc2dd;
+$mercury: #e6e6e6;
+$tundora: #4d4d4d;
+$dove-gray: #666;
+$nobel: #b3b3b3;
+$lochmara: #0071bc;
+$mine-shaft: #333;
+
+$color-brand: $razzmatazz;
+
+$color-text: $tundora;
+$color-text-alt: $nobel;
+$color-heading: $black;
+$color-bg: $mercury;
+$color-border: $gray;
+
+$color-link-default: $lochmara;
+$color-link-visited: $color-link-default;
+$color-link-hover: darken($color-link-default, 20%);
+$color-link-active: darken($color-link-default, 20%);
+
+$color-nav-text: $black;
+$color-nav-hover: lighten($color-nav-text, 20%);

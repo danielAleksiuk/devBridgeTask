@@ -1,0 +1,129 @@
+.page-footer {
+  background-color: $gray;
+  box-sizing: border-box;
+  height: $footer-height;
+  overflow: hidden;
+
+  @include media($small-screen) {
+    height: $footer-height + 150;
+  }
+
+  @include media($medium-screen) {
+    height: $footer-height + 110;
+  }
+
+  &__content {
+    box-sizing: border-box;
+    padding: 0 20px;
+
+    @include media($small-screen) {
+      @include span-columns(2);
+    }
+
+    @include media($medium-screen) {
+      @include span-columns(4);
+    }
+
+    @include media($large-screen) {
+      @include span-columns(6);
+    }
+
+    @include media($xl-screen) {
+      @include span-columns(10);
+      padding-left: 0;
+    }
+
+    p {
+      color: $nobel;
+      font-size: 12px;
+      line-height: 12px;
+      margin-top: 0;
+    }
+  }
+
+  &__logo {
+    box-sizing: border-box;
+    padding-right: 20px;
+
+    @include media($small-screen) {
+      @include span-columns(2);
+    }
+
+    @include media($medium-screen) {
+      @include span-columns(4);
+    }
+
+    @include media($large-screen) {
+      @include span-columns(2);
+    }
+
+    @include media($xl-screen) {
+      @include span-columns(2);
+      padding-right: 0;
+    }
+
+    h1 {
+      color: $white;
+      font: {
+        family: $font-family;
+        size: 30px;
+      }
+
+      @include multiple-media($small-screen, $medium-screen) {
+        float: none;
+        text-align: center;
+      }
+
+      @include multiple-media($large-screen, $xl-screen) {
+        float: right;
+      }
+    }
+  }
+}
+
+.page-footer__navigation {
+  margin: 20px 0;
+  padding: 0 20px;
+
+  @include media($xl-screen) {
+    padding-left: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+
+    li {
+      color: $white;
+      float: left;
+      padding-right: 5px;
+
+      &::after {
+        content: ' |  ';
+      }
+
+      &:last-child::after {
+        content: '';
+      }
+
+      a {
+        color: $white;
+        font-size: 12px;
+        text-decoration: none;
+
+        &:visited {
+          color: $white;
+        }
+
+        &:hover,
+        &:active,
+        &:focus {
+          color: $color-nav-hover;
+        }
+      }
+    }
+  }
+}
+

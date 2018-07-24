@@ -1,0 +1,14 @@
+%button-style {
+  background-color: $color-brand;
+  color: $white;
+  cursor: pointer;
+  font-family: $font-family;
+  height: 35px;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  width: 100px;
+
+  &:hover {
+    background-color: lighten($color-brand, 10%);
+  }
+}

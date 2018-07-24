@@ -1,10 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Devbridge Daniel Aleksiuk home task</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-opa
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">
+            You are using an <strong>outdated</strong> browser. Please<a href="http://browsehappy.com/">upgrade
+            your browser</a> to improve your experience.
+        </p>
+    <![endif]-->
+
+    <div class="page">
+        <header class="page-header" role="banner">
+            <div class="page-frame">
+                <div class="page-brand">
+                    <h1>The Site</h1>
+                </div>
+
+                <div class="page-navigation">
+                    <button class="page-navigation__btn">Menu</button>
+                    <nav class="page-navigation__top" role="navigation">
+                        <ul>
+                            <li><a href="#">menu link</a></li>
+                            <li><a href="#">menu link</a></li>
+                            <li><a href="#">menu link</a></li>
+                            <li><a href="#">menu link</a></li>
+                        </ul>
+                    </nav>
+
+                    <nav class="page-navigation__main" role="navigation">
+                        <ul>
+                            <li>
+                                <div class="dropdown">
+                                    <a href="#">menu link</a>
+                                    <div class="dropdown-content">
+                                        <a href="#">Integer eget mauris</a>
+                                        <a href="#">Pulvinar consectetur</a>
+                                        <a href="#">Oget mauris praesent</a>
+                                        <a href="#">Interdum justo</a>
+                                        <a href="#">Nec neque fringilla</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="#">menu link</a></li>
+                            <li>
+                                    <a href="#">menu link</a>
+                            </li>
+                            <li><a href="#">menu link</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <main class="content-wrapper" role="main">
+            <div class="page-frame clearfix">
+                <section class="page-content">
+                    <article class="page-content__main">
+                        <h1>Aenean ac diam nec neque fringilla</h1>
+                        <p>
+                            Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a
+                            interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc
+                            vehicula rutrum. Integer malesuada mollis ligula at varius.
+                        </p>
+                        <p>
+                            Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a
+                            interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc
+                            vehicula rutrum. Integer malesuada mollis ligula at varius.
+                        </p>
+                        <p>
+                            Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a
+                            interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc
+                            vehicula rutrum. Integer malesuada mollis ligula at varius.
+                        </p>
+                        <p>
+                            Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a
+                            interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc
+                            vehicula rutrum. Integer malesuada mollis ligula at varius.
+                        </p>
+                        <p>
+                            Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a
+                            interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc
+                            vehicula rutrum. Integer malesuada mollis ligula at varius.
+                        </p>
+                        <p>
+                            Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a
+                            interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc
+                            vehicula rutrum. Integer malesuada mollis ligula at varius.
+                        </p>
+                    </article>
+
+                    <article class="page-content__left">
+                        <p>
+                            Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a
+                            interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in
+                            nunc vehicula rutrum.
+                        </p>
+                    </article>
+
+                    <article class="page-content__right">
+                        <h2>Aenan ac dia nec neque</h2>
+                        <ul class="page-content__list">
+                            <li><a href="#">Integer eget mauris et urna</a></li>
+                            <li><a href="#">Pulvinar consectetur hendrerit</a></li>
+                            <li><a href="#">Oget mauris praesent</a></li>
+                        </ul>
+                    </article>
+                </section>
+
+                <aside class="page-sidebar" role="complementary">
+                    <h2>Aenean ac diam nec neque fringilla</h2>
+                    <hr>
+                    <p>
+                        Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a
+                        interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor in
+                        nunc vehicula rutrum. Integer malesuada mollis ligula at varius.
+                    </p>
+
+                    <form class="form-message" id="messageForm" action="#" method="GET">
+                        <fieldset>
+                            <label for="first-name">First name: </label>
+                            <input class="field-text" type="text" id="first-name" name="first-name"
+                                   placeholder="Enter your name" minlength="5" required>
+                            <br>
+                            <label for="last-name">Last name: </label>
+                            <input class="field-text" type="text" id="last-name" name="last-name"
+                               placeholder="Enter your last name" minlength="5" required>
+                            <br>
+                            <label for="message">Message: </label>
+                            <textarea class="field-area" id="message" name="message" required></textarea>
+                            <button class="form-btn" type="submit">Submit</button>
+                        </fieldset>
+                    </form>
+                </aside>
+            </div>
+            <div class="page-frame clearfix">
+                <section class="page-content__bottom">
+                    <article class="page-content__bottom-article">
+                        <p>
+                            Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent
+                            a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor
+                            in nunc vehicula rutrum. Integer malesuada mollis ligula at varius.
+                        </p>
+                    </article>
+                    <article class="page-content__bottom-article">
+                        <p>
+                            Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent
+                            a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor
+                            in nunc vehicula rutrum. Integer malesuada mollis ligula at varius.
+                        </p>
+                    </article>
+                    <article class="page-content__bottom-article">
+                        <p>
+                            Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent
+                            a interdum justo. Aenean ac diam nec neque fringilla cursus. Donec iaculis tortor
+                            in nunc vehicula rutrum. Integer malesuada mollis ligula at varius.
+                        </p>
+                    </article>
+                </section>
+            </div>
+        </main>
+    </div>
+
+    <footer class="page-footer" role="contentinfo">
+        <div class="page-frame">
+            <nav class="page-footer__navigation" role="navigation">
+                <ul>
+                    <li><a href="#">menu link</a></li>
+                    <li><a href="#">menu link</a></li>
+                    <li><a href="#">menu link</a></li>
+                    <li><a href="#">menu link</a></li>
+                    <li><a href="#">menu link</a></li>
+                    <li><a href="#">menu link</a></li>
+                </ul>
+            </nav>
+            <div class="page-footer__content">
+                <p>
+                    Nullam mattis luctus dolor, sed gravida tellus volutpat vel. Maecenas mollis augue sed
+                    tortor molestie ornare. Proin dapibus dictum eros ut adipiscing. Nullam ultrices dolor ut
+                    tristique sollicitudin. Integer scelerisque urna est, sit amet aliquet sapien accumsan quis.
+                    Nullam luctus semper vulputate. Nulla egestas urna nec tellus ultrices elementum.
+                    Proin dapibus dictum eros ut adipiscing.
+                </p>
+            </div>
+            <div class="page-footer__logo">
+                <h1>The Site</h1>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <script src="scripts/jquery.validate.min.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

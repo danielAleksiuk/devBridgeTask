@@ -1,0 +1,46 @@
+[disabled] {
+  cursor: not-allowed;
+}
+
+fieldset {
+  color: $gray;
+  margin-top: 30px;
+  padding: 20px;
+}
+
+label {
+  color: $black;
+}
+
+.field-text,
+.field-area {
+  /* !important is used for validate.js overriding inputs */
+  border: 1px solid $gray;
+  color: $black !important;
+  font: {
+    size: 14px !important;
+    weight: 400 !important;
+  }
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+}
+
+.field-area {
+  height: 90px;
+}
+
+.form-btn {
+  @extend %button-style;
+  border: 0;
+}
+
+.error {
+  color: $red;
+  display: block;
+  font: {
+    size: 12px;
+    weight: 700;
+  }
+  margin-bottom: 10px;
+}

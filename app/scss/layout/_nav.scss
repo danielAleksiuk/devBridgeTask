@@ -1,0 +1,107 @@
+.page-navigation {
+  background-color: $color-brand;
+  box-sizing: border-box;
+  margin: 20px 0;
+
+  @include media($small-screen) {
+    @include span-columns(2);
+    margin-top: 0;
+  }
+
+  @include media($medium-screen) {
+    @include span-columns(4);
+    margin-top: 0;
+  }
+
+  @include media($large-screen) {
+    @include span-columns(5);
+  }
+
+  @include media($xl-screen) {
+    @include span-columns(8);
+  }
+}
+
+.page-navigation__top,
+.page-navigation__main {
+  @include multiple-media($small-screen, $medium-screen) {
+    display: none;
+  }
+
+  @include multiple-media($large-screen, $xl-screen) {
+    display: inline !important;
+  }
+
+  ul {
+    float: right;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    @include multiple-media($small-screen, $medium-screen) {
+      float: none;
+      text-align: center;
+    }
+
+    li {
+      float: left;
+      padding: 10px;
+
+      @include multiple-media($small-screen, $medium-screen) {
+        float: none;
+      }
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.page-navigation__main ul {
+  margin-top: 18px;
+
+  li a {
+    color: $white;
+    font-size: 18px;
+
+    &:visited {
+      color: $white;
+    }
+  }
+}
+
+.page-navigation__top ul li a {
+  color: $color-nav-text;
+  font-size: 14px;
+
+  &:visited {
+    color: $color-nav-text;
+  }
+}
+
+.page-navigation__top ul li,
+.page-navigation__main ul li {
+  a {
+    &:hover,
+    &:active,
+    &:focus {
+      color: $color-nav-hover;
+    }
+  }
+}
+
+.page-navigation__btn {
+  @extend %button-style;
+  border: 1px solid $dove-gray;
+  display: none;
+  margin: 0 auto 0px;
+
+  @include multiple-media($small-screen, $medium-screen) {
+    display: block;
+    width: 100%;
+  }
+}
+
+
+

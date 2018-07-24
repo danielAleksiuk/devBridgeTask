@@ -1,0 +1,92 @@
+article {
+  background-color: $white;
+  padding: 10px 20px;
+}
+
+.page-content {
+  box-sizing: border-box;
+
+  @include media($small-screen) {
+    @include span-columns(2);
+  }
+
+  @include media($medium-screen) {
+    @include span-columns(4);
+  }
+
+  @include media($large-screen) {
+    @include span-columns(5);
+  }
+
+  @include media($xl-screen) {
+    @include span-columns(8);
+  }
+
+  &__main {
+    margin-bottom: 15px;
+  }
+
+  &__left {
+    box-sizing: border-box;
+    height: 180px;
+    margin-bottom: 15px;
+    padding: 20px;
+
+    @include media($large-screen) {
+      @include span-columns(5 of 5);
+      @include shift(0);
+    }
+
+    @include media($xl-screen) {
+      @include span-columns(4 of 8);
+      @include shift(0);
+    }
+  }
+
+  &__right {
+    box-sizing: border-box;
+    height: 180px;
+    margin-bottom: 15px;
+    padding: 20px;
+
+    @include media($large-screen) {
+      @include span-columns(5 of 5);
+      @include shift(0);
+    }
+
+    @include media($xl-screen) {
+      @include span-columns(4 of 8);
+      @include shift(0);
+    }
+  }
+
+  &__bottom {
+    @include span-columns(12);
+    background-color: $silver;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+
+    &-article {
+      background-color: $silver;
+      box-sizing: border-box;
+      padding-right: 10px;
+
+      @include media($small-screen) {
+        @include span-columns(2 of 2);
+      }
+
+      @include media($medium-screen) {
+        @include span-columns(4 of 4);
+      }
+
+      @include media($large-screen) {
+        @include span-columns(4 of 12);
+      }
+
+      @include media($xl-screen) {
+        @include span-columns(4 of 12);
+      }
+    }
+  }
+}
+

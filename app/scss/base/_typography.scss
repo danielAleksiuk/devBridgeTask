@@ -1,0 +1,27 @@
+h1 {
+  color: $black;
+  font: {
+    family: $font-family-heading;
+    size: $font-heading1-size;
+    weight: 700;
+  }
+  line-height: 35px;
+  margin: 20px 0;
+}
+
+h2 {
+  color: $black;
+  font: {
+    family: $font-family-heading;
+    size: $font-heading2-size;
+    weight: 700;
+  }
+  line-height: 25px;
+  margin: 10px 0;
+}
+
+hr {
+  background-color: $black;
+  border: 0;
+  height: 3px;
+}

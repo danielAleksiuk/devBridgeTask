@@ -1,0 +1,30 @@
+.page-content__list {
+  line-height: 30px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  li {
+    border-bottom: 1px solid $gray;
+
+    &:last-child {
+      border: 0;
+    }
+
+    a {
+      color: $color-link-default;
+      text-decoration: none;
+
+      &:visited {
+        color: $color-link-visited;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        color: $color-link-hover;
+      }
+    }
+  }
+}

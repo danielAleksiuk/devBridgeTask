@@ -1,0 +1,51 @@
+.browserupgrade {
+  background: #ccc;
+  color: #000;
+  margin: .2em 0;
+  padding: .2em 0;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+body {
+  background-color: $color-bg;
+  color: $color-text;
+  font: {
+    family: $font-family;
+    size: $font-size;
+  }
+  line-height: $line-height;
+  text-rendering: optimizeLegibility;
+}
+
+.clearfix {
+  @include clearfix($extend: true)
+}
+
+.page {
+  background-color: $color-bg;
+  height: auto;
+  margin: 0 0 (-$footer-height);
+  min-height: 100%;
+}
+
+.page-frame {
+  @include outer-container;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  padding: 20px 0 125px;
+}
+

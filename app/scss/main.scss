@@ -1,9 +1,26 @@
-body {
-  color: red;
-}
-h1 {
-   color:blue;
- }
-h3 {
-  color:blue;
-}
+@charset "UTF-8";
+
+@import 'bourbon';
+@import 'vendor/grid-settings.scss';
+@import 'neat';
+
+@import
+'config/variables',
+'config/mixins',
+'config/placeholders';
+
+@import
+'base/base',
+'base/typography';
+
+@import
+'layout/header',
+'layout/nav',
+'layout/sidebar',
+'layout/sections',
+'layout/footer';
+
+@import
+'components/dropdowns',
+'components/list',
+'components/forms';
